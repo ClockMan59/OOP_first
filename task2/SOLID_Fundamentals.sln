@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SOLID_Fundamentals", "SOLID_Fundamentals.csproj", "{DA78D22F-BC98-470A-965E-4D993D28D6F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "masta", "..\masta\masta.csproj", "{3742CAEE-FEEE-491E-9EAB-202E13FAF8F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA78D22F-BC98-470A-965E-4D993D28D6F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA78D22F-BC98-470A-965E-4D993D28D6F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA78D22F-BC98-470A-965E-4D993D28D6F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA78D22F-BC98-470A-965E-4D993D28D6F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3742CAEE-FEEE-491E-9EAB-202E13FAF8F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3742CAEE-FEEE-491E-9EAB-202E13FAF8F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3742CAEE-FEEE-491E-9EAB-202E13FAF8F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3742CAEE-FEEE-491E-9EAB-202E13FAF8F4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A0C823AC-2452-4DA8-A8EE-D972E257A621}
+	EndGlobalSection
+EndGlobal
