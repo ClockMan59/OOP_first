@@ -1,4 +1,7 @@
-﻿public abstract class TriangleCreator
+﻿namespace task3
 {
-    public abstract Triangle CreateTriangle();
+    public abstract class TriangleCreator
+    {
+        public abstract Triangle CreateTriangle();
+    }
 }

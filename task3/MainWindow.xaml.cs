@@ -1,45 +1,49 @@
 ﻿using System.Windows;
+using System.Windows.Controls;
 
 namespace task3
 {
     public partial class MainWindow : Window
     {
+        // Клиентский код работает ТОЛЬКО с абстракцией фабрики
+        private IFigureFactory _currentFactory;
+
         public MainWindow()
         {
-            InitializeComponent(); // Это необходимо!
+            InitializeComponent();
         }
-    
-        private void colorBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+
+        private void ComboBox_SelectedIndexChanged(object sender, SelectionChangedEventArgs e)
         {
-            figurePanel.Children.Clear();
+            if (DrawingPanel == null) return;
 
-            var selected = (colorBox.SelectedItem as ComboBoxItem)?.Content.ToString();
+            DrawingPanel.Children.Clear(); // Очищаем панель от старых фигур
 
-            switch (selected)
+            var selectedItem = (ComboBoxItem)ColorComboBox.SelectedItem;
+            if (selectedItem == null) return;
+
+            // 1. Выбираем нужную фабрику в зависимости от цвета
+            switch (selectedItem.Content.ToString())
             {
                 case "Красный":
-                    currentFactory = new RedFactory();
+                    _currentFactory = new RedFactory();
                     break;
-
                 case "Синий":
-                    currentFactory = new BlueFactory();
+                    _currentFactory = new BlueFactory();
                     break;
-
                 case "Зелёный":
-                    currentFactory = new GreenFactory();
+                    _currentFactory = new GreenFactory();
                     break;
-
                 default:
                     return;
             }
 
-            var circle = currentFactory.CreateCircle();
-            var square = currentFactory.CreateSquare();
-            var triangle = currentFactory.CreateTriangle();
-
-            figurePanel.Children.Add(circle.CreateUIElement());
-            figurePanel.Children.Add(square.CreateUIElement());
-            figurePanel.Children.Add(triangle.CreateUIElement());
+            // 2. Создаем фигуры через интерфейс фабрики и выводим на экран
+            // Обрати внимание: теперь мы вызываем методы у _currentFactory, 
+            // не задумываясь о том, объекты какого именно цвета она производит.
+            DrawingPanel.Children.Add(_currentFactory.CreateCircle().CreateUIElement());
+            DrawingPanel.Children.Add(_currentFactory.CreateSquare().CreateUIElement());
+            DrawingPanel.Children.Add(_currentFactory.CreateTriangle().CreateUIElement());
         }
     }
 }

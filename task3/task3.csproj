@@ -59,10 +59,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="AbstractFactory\BlueFactory.cs" />
+    <Compile Include="AbstractFactory\GreenFactory.cs" />
+    <Compile Include="AbstractFactory\IFigureFactory.cs" />
+    <Compile Include="AbstractFactory\RedFactory.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="FactoryMethod\CircleCreator.cs" />
+    <Compile Include="FactoryMethod\SqaureCreator.cs" />
+    <Compile Include="FactoryMethod\TriangleCreator.cs" />
     <Compile Include="Figures\Circle.cs" />
     <Compile Include="Figures\Figure.cs" />
     <Compile Include="Figures\Square.cs" />
@@ -98,8 +105,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Creators\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
