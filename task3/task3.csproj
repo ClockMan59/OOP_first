@@ -63,18 +63,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Creators\CircleCreators\BlueCircleCreator.cs" />
-    <Compile Include="Creators\CircleCreators\CircleCreator.cs" />
-    <Compile Include="Creators\CircleCreators\GreenCircleCreator.cs" />
-    <Compile Include="Creators\CircleCreators\RedCircleCreator.cs" />
-    <Compile Include="Creators\SqaureCreators\BlueSqaureCreator.cs" />
-    <Compile Include="Creators\SqaureCreators\GreenSquareCreator.cs" />
-    <Compile Include="Creators\SqaureCreators\RedSquareCreator.cs" />
-    <Compile Include="Creators\SqaureCreators\SqaureCreator.cs" />
-    <Compile Include="Creators\TriangleCreators\BlueTriangleCreator.cs" />
-    <Compile Include="Creators\TriangleCreators\GreenTriangleCreator.cs" />
-    <Compile Include="Creators\TriangleCreators\RedTriangleCreator.cs" />
-    <Compile Include="Creators\TriangleCreators\TriangleCreator.cs" />
     <Compile Include="Figures\Circle.cs" />
     <Compile Include="Figures\Figure.cs" />
     <Compile Include="Figures\Square.cs" />
@@ -109,6 +97,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Creators\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
