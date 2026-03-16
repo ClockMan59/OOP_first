@@ -8,4 +8,5 @@
     <Build Solution="*|Any CPU" Project="false" />
   </Project>
   <Project Path="task4/task4.csproj" Id="98ff0a71-d929-4843-aafa-05cccd3433fc" />
+  <Project Path="task5/task5.csproj" Id="057253a9-956a-466a-adb2-210512ef590c" />
 </Solution>

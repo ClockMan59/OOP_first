@@ -18,7 +18,6 @@ namespace task4
             Console.WriteLine("Кастомный ПК:");
             customPc.Display();
 
-
             Console.WriteLine("=== 2. Паттерн Прототип (Prototype) ===");
             Computer original = new OfficeComputerFactory().Construct();
 
