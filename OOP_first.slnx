@@ -1,12 +1,3 @@
 <Solution>
-  <Configurations>
-    <Platform Name="Any CPU" />
-    <Platform Name="x64" />
-    <Platform Name="x86" />
-  </Configurations>
-  <Project Path="task4.1/task4.1.vcxproj">
-    <Build Solution="*|Any CPU" Project="false" />
-  </Project>
-  <Project Path="task4/task4.csproj" Id="98ff0a71-d929-4843-aafa-05cccd3433fc" />
-  <Project Path="task5/task5.csproj" Id="057253a9-956a-466a-adb2-210512ef590c" />
+  <Project Path="task6/task6.csproj" Id="b53ae312-ce5a-40e3-be59-82f9ec251eaa" />
 </Solution>
