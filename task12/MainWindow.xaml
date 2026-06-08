@@ -1,18 +1,7 @@
-﻿<Window x:Class="task12.MainWindow"
+<Window x:Class="task12.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:vm="clr-namespace:task12.ViewModels"
-        xmlns:v="clr-namespace:task12.Views"
-        Title="Телефонная книга Shell" Height="450" Width="500">
-
-    <Window.Resources>
-        <DataTemplate DataType="{x:Type vm:ContactsListViewModel}">
-            <v:ContactsListView />
-        </DataTemplate>
-        <DataTemplate DataType="{x:Type vm:AboutViewModel}">
-            <v:AboutView />
-        </DataTemplate>
-    </Window.Resources>
+        Title="Телефонная книга" Height="450" Width="500">
 
     <DockPanel>
         <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Background="#EEE">
